@@ -18,13 +18,14 @@ management, and employee tracking.
 - **Version Control**: Git/GitHub
 
 ## 📂 Table of Contents
-1. [Queries](#-queries)
-2. [Views](#-views)
-3. [Stored Procedures](#-stored-procedures)
-4. [Database Functions](#-database-functions)
-5. [Triggers](#-triggers)
-6. [Performance and Optimization Notes](#-performance-and-optimization-notes)
-7. [Sample Data (Seeding)](#-sample-data-seeding)
+1.[Sample Data (Seeding)](#sample-data-seeding)
+2. [Queries](#queries)
+4. [Views](#views)
+5. [Stored Procedures](#stored-procedures)
+6. [Database Functions](#database-functions)
+7. [Triggers](#triggers)
+8. [Performance and Optimization Notes](#performance-and-optimization-notes)
+   
    
 ## Database Schema (ERD)
   <img width="1000" height="900" alt="RestaurantSchema" src="https://github.com/user-attachments/assets/2d7b3a36-75b3-400b-a029-06d98adfbadd" />
