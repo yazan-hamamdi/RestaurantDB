@@ -18,13 +18,15 @@ management, and employee tracking.
 - **Version Control**: Git/GitHub
 
 ## 📂 Table of Contents
-1.[Sample Data (Seeding)](#sample-data-seeding)
-2. [Queries](#queries)
-4. [Views](#views)
-5. [Stored Procedures](#stored-procedures)
-6. [Database Functions](#database-functions)
-7. [Triggers](#triggers)
-8. [Performance and Optimization Notes](#performance-and-optimization-notes)
+
+1. [Sample Data (Seeding)](#sample-data-seeding)  
+2. [Queries](#queries)  
+3. [Views](#views)  
+4. [Stored Procedures](#stored-procedures)  
+5. [Database Functions](#database-functions)  
+6. [Triggers](#triggers)  
+7. [Performance and Optimization Notes](#performance-and-optimization-notes)
+
    
    
 ## Database Schema (ERD)
