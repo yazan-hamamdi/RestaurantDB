@@ -1,4 +1,4 @@
-CREATE FUNCTION Restaurant.fn_CalculateRevenue (@RestaurantId INT)
+CREATE OR ALTER FUNCTION Restaurant.fn_CalculateRevenue (@RestaurantId INT)
 RETURNS DECIMAL(10,2)
 AS
 BEGIN

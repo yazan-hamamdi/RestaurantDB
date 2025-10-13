@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.GetCustomerReservations
+CREATE OR ALTER PROCEDURE Restaurant.GetCustomerReservations
 @Customerid INT
 AS
  BEGIN

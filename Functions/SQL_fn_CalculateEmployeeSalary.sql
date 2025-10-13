@@ -1,27 +1,21 @@
-CREATE FUNCTION Restaurant.fn_CalculateEmployeeSalary (@EmployeeId INT)
+CREATE OR ALTER FUNCTION Restaurant.fn_CalculateEmployeeSalary (@EmployeeId INT)
 RETURNS INT
 AS
 BEGIN
-   DECLARE @OrderCount INT;
-   DECLARE @Rank INT;
-   DECLARE @Salary INT;
+    DECLARE @Salary INT;
 
-   SELECT 
-      @OrderCount = COUNT(*)
-   FROM Restaurant.Orders
-   WHERE EmployeeId = @EmployeeId;
-
-   SELECT @Rank =
-        CASE Position
+    SELECT @Salary = ISNULL(COUNT(o.OrderId), 0) *
+        CASE e.Position
             WHEN 'VIPOrdersWaiter' THEN 5
             WHEN 'StandardWaiter' THEN 4
             WHEN 'AssistantWaiter' THEN 3
             ELSE 1
         END
-    FROM Restaurant.Employees
-    WHERE EmployeeId = @EmployeeId;
-
-	 SET @Salary = ISNULL(@OrderCount, 0) * ISNULL(@Rank, 0);
+    FROM Restaurant.Employees e
+    LEFT JOIN Restaurant.Orders o
+        ON e.EmployeeId = o.EmployeeId
+    WHERE e.EmployeeId = @EmployeeId
+    GROUP BY e.EmployeeId, e.Position;
 
     RETURN @Salary;
-END;    
+END;

@@ -1,4 +1,4 @@
-CREATE VIEW Restaurant.ReservationsReport
+CREATE OR ALTER VIEW Restaurant.ReservationsReport
 AS
 SELECT 
     r.ReservationId,

@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.GetEmployeeAverageOrderAmount
+CREATE OR ALTER PROCEDURE Restaurant.GetEmployeeAverageOrderAmount
     @EmployeeId INT
 AS
 BEGIN

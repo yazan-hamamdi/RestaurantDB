@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.sp_FutureReservedTables
+CREATE OR ALTER PROCEDURE Restaurant.sp_FutureReservedTables
 AS
 BEGIN
     SET NOCOUNT ON;

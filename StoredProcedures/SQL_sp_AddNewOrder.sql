@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.sp_AddNewOrder
+CREATE OR ALTER PROCEDURE Restaurant.sp_AddNewOrder
     @ReservationId INT,
     @EmployeeId INT,
     @OrderDate DATETIME,

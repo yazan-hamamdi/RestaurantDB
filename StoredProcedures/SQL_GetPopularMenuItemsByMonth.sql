@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.GetPopularMenuItemsByMonth
+CREATE OR ALTER PROCEDURE Restaurant.GetPopularMenuItemsByMonth
     @Month INT,
     @Year INT
 AS

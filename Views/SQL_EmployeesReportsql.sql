@@ -1,4 +1,4 @@
-CREATE VIEW Restaurant.EmployeesReport
+CREATE OR ALTER VIEW Restaurant.EmployeesReport
 AS
 SELECT 
     e.EmployeeId,

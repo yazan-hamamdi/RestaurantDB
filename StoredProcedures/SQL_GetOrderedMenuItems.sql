@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.GetOrderedMenuItems
+CREATE OR ALTER PROCEDURE Restaurant.GetOrderedMenuItems
     @ReservationId INT
 AS
 BEGIN

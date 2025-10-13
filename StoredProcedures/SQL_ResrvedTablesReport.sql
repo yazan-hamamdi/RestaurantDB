@@ -1,4 +1,4 @@
-CREATE PROCEDURE Restaurant.sp_ResrvedTablesReport
+CREATE OR ALTER PROCEDURE Restaurant.sp_ResrvedTablesReport
     @StartDate DATETIME,
     @EndDate DATETIME
 AS
