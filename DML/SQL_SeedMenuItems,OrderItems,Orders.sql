@@ -1,0 +1,70 @@
+INSERT INTO Restaurant.MenuItems (RestaurantId, Name, Description, Price) VALUES
+(1, N'Grilled Salmon', N'Fresh salmon with lemon butter sauce', 25.50),
+(1, N'Caesar Salad', N'Crisp lettuce, croutons, parmesan', 10.00),
+(1, N'Steak Frites', N'Beef steak with fries', 28.00),
+(2, N'Margarita Pizza', N'Tomato, mozzarella, fresh basil', 15.00),
+(2, N'Spaghetti Carbonara', N'Pasta with pancetta and creamy sauce', 18.50),
+(2, N'Tiramisu', N'Classic Italian dessert', 8.00),
+(3, N'Sushi Platter', N'Assorted sushi rolls and sashimi', 30.00),
+(3, N'Ramen Bowl', N'Pork broth ramen with egg', 14.00),
+(3, N'Tempura Shrimp', N'Crispy battered shrimp', 12.00),
+( 4, N'BBQ Ribs', N'Slow cooked ribs with smoky BBQ sauce', 22.00),
+( 4, N'Cheeseburger', N'Grilled beef burger with cheese', 13.00),
+( 4, N'Onion Rings', N'Crispy fried onion rings', 6.00),
+( 5, N'Pepperoni Pizza', N'Cheesy pizza with pepperoni slices', 16.00),
+( 5, N'Garlic Bread', N'Toasted bread with garlic butter', 5.50),
+( 5, N'Lasagna', N'Layers of pasta, meat, and cheese', 19.00),
+( 6, N'Chicken Biryani', N'Spiced rice with chicken', 12.00),
+( 6, N'Butter Chicken', N'Creamy tomato chicken curry', 14.00),
+( 6, N'Naan Bread', N'Traditional Indian flatbread', 3.00),
+( 7, N'Falafel Wrap', N'Chickpea patties with tahini', 9.00),
+( 7, N'Shawarma Plate', N'Grilled meat with rice and salad', 13.50);
+
+GO
+
+INSERT INTO Restaurant.Orders (ReservationId, EmployeeId, OrderDate, TotalAmount) VALUES
+(41, 1, '2023-09-01 19:30:00', 35.50),
+(42, 2, '2023-09-02 20:00:00', 33.50),
+(43, 3, '2023-09-03 21:00:00', 30.00),
+(44, 1, '2023-09-04 18:45:00', 22.00),
+(45, 2, '2023-09-05 20:15:00', 40.00),
+(46, 4, '2023-09-06 19:20:00', 28.00),
+(47, 1, '2023-09-07 21:10:00', 16.50),
+(48, 5, '2023-09-08 18:55:00', 19.00),
+(49, 3, '2023-09-09 20:40:00', 24.00),
+(50, 2, '2023-09-10 19:30:00', 38.00),
+(51, 4, '2023-09-11 21:15:00', 29.00),
+(52, 5, '2023-09-12 20:10:00', 12.00),
+(53, 1, '2023-09-13 19:25:00', 42.00),
+(54, 2, '2023-09-14 18:50:00', 18.00),
+(55, 3, '2023-09-15 20:30:00', 27.00),
+(56, 4, '2023-09-16 21:05:00', 31.50),
+(57, 5, '2023-09-17 19:10:00', 15.00),
+(58, 1, '2023-09-18 18:40:00', 20.00),
+(59, 2, '2023-09-19 20:25:00', 23.00),
+(50, 3, '2023-09-20 21:20:00', 34.50);
+
+GO
+
+INSERT INTO Restaurant.OrderItems (OrderId, ItemId, Quantity) VALUES
+(11, 1, 1),
+(12, 2, 1),
+(22, 4, 2),   
+(13, 7, 1),   
+(14, 11, 1),  
+(15, 5, 1),   
+(15, 6, 2),   
+(16, 8, 2),   
+(7, 14, 3),  
+( 8, 15, 1), 
+( 9, 16, 2), 
+( 10, 10, 1),
+( 11, 13, 2),
+( 12, 19, 1),
+( 13, 3, 1), 
+( 14, 9, 2), 
+( 15, 12, 2),
+( 16, 20, 1),
+( 17, 18, 3),
+( 20, 17, 2);
+SELECT * FROM Restaurant.Orders;
